@@ -1,0 +1,18 @@
+{
+  "catalog_version": 1,
+  "updated": "2026-10-14",
+  "payloads": [
+    {
+      "name": "Example Payload",
+      "description": "Replace this example with a real trusted release source.",
+      "source_repo": "OWNER/UPSTREAM-REPOSITORY",
+      "asset_name": "payload.bin",
+      "version": "v1.0.0",
+      "url": "https://example.com/payload.bin",
+      "filename": "payload.bin",
+      "size": 0,
+      "sha256": "",
+      "enabled": true
+    }
+  ]
+}
