@@ -1,5 +1,6 @@
 # StanStation payload catalog updater
-# Checks configured source_repo + asset_name entries against GitHub latest releases.
+# Tracks the newest GitHub release that provides a direct .elf asset.
+# Only .elf release assets are eligible; archives and source bundles are never selected.
 import json, os, sys, urllib.request, datetime
 from pathlib import Path
 
@@ -22,8 +23,8 @@ def main(path):
     for entry in entries:
         if not isinstance(entry, dict):
             continue
-        repo, asset_name = entry.get("source_repo"), entry.get("asset_name")
-        if not repo or not asset_name:
+        repo = entry.get("source_repo")
+        if not repo:
             continue
         parts = repo.split("/")
         allowed = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_."
@@ -31,21 +32,45 @@ def main(path):
             print("Skipping invalid source_repo:", repo)
             continue
         try:
-            release = get_json("https://api.github.com/repos/{}/releases/latest".format(repo))
-            asset = next((a for a in release.get("assets", []) if a.get("name") == asset_name), None)
-            if not asset:
-                print("Asset not found for", repo, asset_name)
+            # /releases/latest omits prereleases. Inspect recent releases so a
+            # prerelease with a direct ELF can be tracked too.
+            releases = get_json("https://api.github.com/repos/{}/releases?per_page=20".format(repo))
+            selected = None
+            asset = None
+            for release in releases:
+                if release.get("draft"):
+                    continue
+                elf_assets = [
+                    a for a in release.get("assets", [])
+                    if isinstance(a.get("name"), str) and a["name"].lower().endswith(".elf")
+                    and a.get("browser_download_url")
+                ]
+                if elf_assets:
+                    # Prefer the configured exact asset name if present; otherwise
+                    # use the first direct ELF in the newest eligible release.
+                    wanted = entry.get("asset_name")
+                    asset = next((a for a in elf_assets if a["name"] == wanted), elf_assets[0])
+                    selected = release
+                    break
+            if not selected or not asset:
+                print("No direct .elf release asset found for", repo)
                 continue
-            version = release.get("tag_name") or entry.get("version", "")
-            if version != entry.get("version") and entry.get("sha256"):
-                entry["sha256"] = ""
-                changed = True
-            values = {"version": version, "url": asset.get("browser_download_url", entry.get("url", "")), "size": asset.get("size", entry.get("size", 0)), "filename": entry.get("filename") or asset_name}
+            version = selected.get("tag_name") or entry.get("version", "")
+            asset_name = asset["name"]
+            values = {
+                "version": version,
+                "url": asset["browser_download_url"],
+                "size": asset.get("size", entry.get("size", 0)),
+                "filename": asset_name,
+                "asset_name": asset_name,
+                "sha256": (asset.get("digest") or "").removeprefix("sha256:"),
+                "elf_only": True
+            }
             for key, value in values.items():
                 if value is not None and entry.get(key) != value:
                     entry[key] = value
                     changed = True
-            print("Checked", entry.get("name", repo), version)
+            print("Checked", entry.get("name", repo), version, asset_name)
         except Exception as exc:
             print("Warning: release check failed for", repo, str(exc))
     if changed:
