@@ -1,27 +1,19 @@
-
 {
   "catalog_version": 1,
   "updated": "2026-10-14",
   "payloads": [
     {
-      "name": "Example Payload",
-      "description": "Example entry for testing",
-      "version": "1.0.0",
-      "url": "https://example.com/payload.bin",
-      "filename": "example.bin",
-      "size": 0,
-      "sha256": "",
-      "enabled": true
-    },
-    {
-      "name": "My Second Payload",
-      "description": "Another catalog entry",
-      "version": "1.0.0",
-      "url": "https://example.com/second.bin",
-      "filename": "second.bin",
-      "size": 0,
-      "sha256": "",
-      "enabled": true
+      "name": "HyperHEN",
+      "description": "All-in-one PS5 HEN and toolbox payload. Requires an already jailbroken console and an external elfldr on port 9021 for the first hop. Check upstream firmware compatibility notes.",
+      "version": "HYPERHEN",
+      "url": "https://github.com/Michele-M-Media/HYPERHEN/releases/download/HYPERHEN/HyperHEN-v0.9.1-dev.elf",
+      "filename": "HyperHEN-v0.9.1-dev.elf",
+      "size": 6458288,
+      "sha256": "e9e0c08721fbbe3155068ed1c6b92a8c7571a9bfe31471b9d3637e2514985dbd",
+      "enabled": true,
+      "source_repo": "Michele-M-Media/HYPERHEN",
+      "asset_name": "HyperHEN-v0.9.1-dev.elf",
+      "elf_only": true
     }
   ]
 }
