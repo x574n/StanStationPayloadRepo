@@ -53,6 +53,159 @@
       "source_repo": "itsPLK/ps5-webkit-autoloader",
       "asset_name": "webkit-autoloader-installer_v0.6.1.elf",
       "elf_only": true
+    },
+    {
+      "name": "kstuff-lite",
+      "description": "PS5 kernel-patching payload; curated v1.11 build for the PS5 13.60 setup. Load only when required by your chosen setup.",
+      "version": "v1.11",
+      "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
+      "filename": "kstuff.elf",
+      "size": 1737080,
+      "sha256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779",
+      "enabled": true,
+      "source_repo": "EchoStretch/kstuff-lite",
+      "asset_name": "kstuff.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "ShadowMountPlus",
+      "description": "Background auto-mounter payload. v1.7beta4 is included as a known 13.60-compatible pairing with kstuff-lite v1.11; do not load multiple ShadowMount variants.",
+      "version": "1.7beta4",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta4/shadowmountplus.elf",
+      "filename": "shadowmountplus.elf",
+      "size": 2475496,
+      "sha256": "fc4e5f715e76660ce34bde2adb10eaf1d069cb2cdf06f7a380896dfb62bd0c4a",
+      "enabled": true,
+      "source_repo": "drakmor/ShadowMountPlus",
+      "asset_name": "shadowmountplus.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "FTP Server (PS5)",
+      "description": "PS5 FTP server for transferring files over the local network.",
+      "version": "v0.21.1",
+      "url": "https://github.com/ps5-payload-dev/ftpsrv/releases/download/v0.21.1/ftpsrv-ps5.elf",
+      "filename": "ftpsrv-ps5.elf",
+      "size": 191864,
+      "sha256": "7d4b31c83eae4e056580482a3a074e1db25922efc74ac1e439473b45d71a5938",
+      "enabled": true,
+      "source_repo": "ps5-payload-dev/ftpsrv",
+      "asset_name": "ftpsrv-ps5.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "nanoDNS",
+      "description": "Small PS5 DNS service. Optional networking utility; review its behavior before using it.",
+      "version": "0.4",
+      "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
+      "filename": "nanodns.elf",
+      "size": 132352,
+      "sha256": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5",
+      "enabled": true,
+      "source_repo": "drakmor/nanodns",
+      "asset_name": "nanodns.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "Kernel Log Server",
+      "description": "PS5 kernel log streaming service for troubleshooting and diagnostics.",
+      "version": "v0.9",
+      "url": "https://github.com/ps5-payload-dev/klogsrv/releases/download/v0.9/klogsrv-ps5.elf",
+      "filename": "klogsrv-ps5.elf",
+      "size": 136016,
+      "sha256": "e828ec144231f81547cb58bc7d2c396fa984be0c2295f31364b58017816dcceb",
+      "enabled": true,
+      "source_repo": "ps5-payload-dev/klogsrv",
+      "asset_name": "klogsrv-ps5.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "Web Server",
+      "description": "PS5 web server/homebrew launcher service. Runs as a separate optional payload.",
+      "version": "v0.35",
+      "url": "https://github.com/ps5-payload-dev/websrv/releases/download/v0.35/websrv-ps5.elf",
+      "filename": "websrv-ps5.elf",
+      "size": 1599288,
+      "sha256": "25501b41887a42789792d1367edd2fc892454bfe6b0b1519bc36456a581f264c",
+      "enabled": true,
+      "source_repo": "ps5-payload-dev/websrv",
+      "asset_name": "websrv-ps5.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "PLK Payload Manager",
+      "description": "Payload manager interface. v0.5.2 is the version referenced by the PS5 13.60 Relapse payload set; kept pinned for compatibility.",
+      "version": "v0.5.2",
+      "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
+      "filename": "pldmgr_v0.5.2.elf",
+      "size": 2410776,
+      "sha256": "62b3ba2a4937c2afc502f9a4e7242cca538610ebb4ae2800c7c6f72e7f268e7c",
+      "enabled": true,
+      "source_repo": "itsPLK/ps5-payload-manager",
+      "asset_name": "pldmgr_v0.5.2.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "PS5 Account Tools",
+      "description": "PS5 account-management utility; v1.2 has community-reported support on firmware 13.60. Requires an already jailbroken session and ELF loader.",
+      "version": "v1.2",
+      "url": "https://github.com/MangoScango/ps5-account-tools/releases/download/v1.2/ps5-account-tools-v1.2.elf",
+      "filename": "ps5-account-tools-v1.2.elf",
+      "size": 387904,
+      "sha256": "2e1402d8c088afda55280b28fcc66ccb870528ec948d10ea586088f60f723f2a",
+      "enabled": true,
+      "source_repo": "MangoScango/ps5-account-tools",
+      "asset_name": "ps5-account-tools-v1.2.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "PS5 Relapse AutoLoader Installer",
+      "description": "Installer for the native Relapse AutoLoader, whose project documents support through PS5 firmware 13.60. Requires an already-jailbroken console and elfldr.",
+      "version": "v0.3.1",
+      "url": "https://github.com/ManoharPadul/ps5-relapse-autoloader/releases/download/v0.3.1/ps5-relapse-autoloader-installer.0.3.1.elf",
+      "filename": "ps5-relapse-autoloader-installer.0.3.1.elf",
+      "size": 12780800,
+      "sha256": "c71db974fe01c24df53ab4349f674220d0f715f82fc21acd765876977dd102df",
+      "enabled": true,
+      "source_repo": "ManoharPadul/ps5-relapse-autoloader",
+      "asset_name": "ps5-relapse-autoloader-installer.0.3.1.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
     }
   ]
 }
