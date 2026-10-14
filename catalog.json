@@ -14,6 +14,45 @@
       "source_repo": "Michele-M-Media/HYPERHEN",
       "asset_name": "HyperHEN-v0.9.1-dev.elf",
       "elf_only": true
+    },
+    {
+      "name": "PS5SX2",
+      "description": "PS5SX2 release ELF payload.",
+      "version": "vk-285-163",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-163/ps5sx2-bot.elf",
+      "filename": "ps5sx2-bot.elf",
+      "size": 1298512,
+      "sha256": "3420cdb5c826014b22b8ca8fa60a2026f0d9f91d3f5a5b818d4c98373eccb123",
+      "enabled": true,
+      "source_repo": "Swordpdf/PS5SX2",
+      "asset_name": "ps5sx2-bot.elf",
+      "elf_only": true
+    },
+    {
+      "name": "Orbit Store",
+      "description": "Orbit Store PS5 release ELF payload.",
+      "version": "v1.3.0",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.3.0/orbit_store.elf",
+      "filename": "orbit_store.elf",
+      "size": 64711608,
+      "sha256": "553b39e7503ec141f6a015b7939c83e93fe8f05dee176e42c7e3bc026b0ea519",
+      "enabled": true,
+      "source_repo": "saawant12/orbit-store-ps5",
+      "asset_name": "orbit_store.elf",
+      "elf_only": true
+    },
+    {
+      "name": "PS5 WebKit Autoloader",
+      "description": "PS5 WebKit Autoloader installer ELF payload.",
+      "version": "v0.6.1",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
+      "filename": "webkit-autoloader-installer_v0.6.1.elf",
+      "size": 3556608,
+      "sha256": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f",
+      "enabled": true,
+      "source_repo": "itsPLK/ps5-webkit-autoloader",
+      "asset_name": "webkit-autoloader-installer_v0.6.1.elf",
+      "elf_only": true
     }
   ]
 }
