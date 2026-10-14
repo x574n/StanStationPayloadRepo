@@ -1,0 +1,27 @@
+
+{
+  "catalog_version": 1,
+  "updated": "2026-10-14",
+  "payloads": [
+    {
+      "name": "Example Payload",
+      "description": "Example entry for testing",
+      "version": "1.0.0",
+      "url": "https://example.com/payload.bin",
+      "filename": "example.bin",
+      "size": 0,
+      "sha256": "",
+      "enabled": true
+    },
+    {
+      "name": "My Second Payload",
+      "description": "Another catalog entry",
+      "version": "1.0.0",
+      "url": "https://example.com/second.bin",
+      "filename": "second.bin",
+      "size": 0,
+      "sha256": "",
+      "enabled": true
+    }
+  ]
+}
