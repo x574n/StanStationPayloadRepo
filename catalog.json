@@ -13,7 +13,8 @@
       "enabled": true,
       "source_repo": "Michele-M-Media/HYPERHEN",
       "asset_name": "HyperHEN-v0.9.1-dev.elf",
-      "elf_only": true
+      "elf_only": true,
+      "firmware_compatibility": "Unverified for PS5 firmware 13.60; retained from earlier catalog requests."
     },
     {
       "name": "PS5SX2",
@@ -26,7 +27,8 @@
       "enabled": true,
       "source_repo": "Swordpdf/PS5SX2",
       "asset_name": "ps5sx2-bot.elf",
-      "elf_only": true
+      "elf_only": true,
+      "firmware_compatibility": "Unverified for PS5 firmware 13.60; retained from earlier catalog requests."
     },
     {
       "name": "Orbit Store",
@@ -39,7 +41,8 @@
       "enabled": true,
       "source_repo": "saawant12/orbit-store-ps5",
       "asset_name": "orbit_store.elf",
-      "elf_only": true
+      "elf_only": true,
+      "firmware_compatibility": "Unverified for PS5 firmware 13.60; retained from earlier catalog requests."
     },
     {
       "name": "PS5 WebKit Autoloader",
@@ -52,7 +55,8 @@
       "enabled": true,
       "source_repo": "itsPLK/ps5-webkit-autoloader",
       "asset_name": "webkit-autoloader-installer_v0.6.1.elf",
-      "elf_only": true
+      "elf_only": true,
+      "firmware_compatibility": "Unverified for PS5 firmware 13.60; retained from earlier catalog requests."
     },
     {
       "name": "kstuff-lite",
