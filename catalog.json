@@ -210,6 +210,36 @@
         "13.60"
       ],
       "auto_update": false
+    },
+    {
+      "name": "PS5 Game Compressor",
+      "description": "Standalone PS5 utility for compressing, unpacking, validating, and repairing ShadowMountPlus-mounted games. Requires Kstuff Lite 1.07+ and ShadowMountPlus; the Relapse payload set documents this build for firmware 13.60.",
+      "version": "v1.0.4",
+      "url": "https://github.com/juma-sayeh/PS5-Game-Compressor/releases/download/v1.0.4/game-compressor.elf",
+      "filename": "game-compressor.elf",
+      "sha256": "e55e90aaade13b6e0d4316c1597ef90a21b67a06475c3e25de054224bc1e941b",
+      "enabled": true,
+      "source_repo": "juma-sayeh/PS5-Game-Compressor",
+      "asset_name": "game-compressor.elf",
+      "elf_only": true,
+      "firmware_supported": [
+        "13.60"
+      ],
+      "auto_update": false
+    },
+    {
+      "name": "BFpilot File Manager",
+      "description": "Browser-based PS5 file manager with file transfer and archive support. v0.4.4 has a community-reported firmware 13.60 adaptation; upstream release hardware testing cited is on 11.60, so 13.60 should be treated as not independently verified.",
+      "version": "v0.4.4",
+      "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
+      "filename": "bfpilot.elf",
+      "sha256": "5a8237630260026ad054d71fbbe661e433ac9ffa2cb4eea2785769c1eb7ee1c1",
+      "enabled": true,
+      "source_repo": "ItsBlurf/BFpilot",
+      "asset_name": "bfpilot.elf",
+      "elf_only": true,
+      "firmware_compatibility": "Community-reported 13.60 adaptation; not independently hardware-verified.",
+      "auto_update": false
     }
   ]
 }
