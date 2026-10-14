@@ -24,6 +24,11 @@ def main(path):
         if not isinstance(entry, dict):
             continue
         repo = entry.get("source_repo")
+        # Firmware-specific catalog entries are pinned so the scheduled updater
+        # cannot silently replace a known-compatible ELF with a newer unverified build.
+        if entry.get("auto_update") is False:
+            print("Pinned catalog entry; skipping automatic update:", entry.get("name", repo or "unnamed"))
+            continue
         if not repo:
             continue
         parts = repo.split("/")
