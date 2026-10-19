@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "updated": "2026-10-14",
+  "updated": "2026-10-19",
   "payloads": [
     {
       "name": "HyperHEN",
@@ -19,8 +19,8 @@
     {
       "name": "PS5SX2",
       "description": "PS5SX2 release ELF payload.",
-      "version": "vk-285-171",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-171/PS5SX2Installer.elf",
+      "version": "vk-285-177",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-177/PS5SX2Installer.elf",
       "filename": "PS5SX2Installer.elf",
       "size": 1196432,
       "sha256": "6b1be3ea24ec8144b27b2a1f3e279cd17574f3093e9431abf8579dcc6c0bfae9",
