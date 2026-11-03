@@ -19,8 +19,8 @@
     {
       "name": "PS5SX2",
       "description": "PS5SX2 release ELF payload.",
-      "version": "vk-285-182",
-      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-182/PS5SX2Installer.elf",
+      "version": "vk-285-187",
+      "url": "https://github.com/Swordpdf/PS5SX2/releases/download/vk-285-187/PS5SX2Installer.elf",
       "filename": "PS5SX2Installer.elf",
       "size": 1163520,
       "sha256": "efdec4f8d968ef4a7c1880e75d26b96d212a042a6c208de46f0a859609f6224c",
