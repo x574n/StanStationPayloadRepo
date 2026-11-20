@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "updated": "2026-11-17",
+  "updated": "2026-11-20",
   "payloads": [
     {
       "name": "HyperHEN",
@@ -33,11 +33,11 @@
     {
       "name": "Orbit Store",
       "description": "Orbit Store PS5 release ELF payload.",
-      "version": "v1.9.2",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.9.2/orbit_store.elf",
+      "version": "v1.9.5",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.9.5/orbit_store.elf",
       "filename": "orbit_store.elf",
-      "size": 66288488,
-      "sha256": "5fe4892269ebe940731d0236cd1bbca8d827e7690676f7b7af32fb9c5a775f5b",
+      "size": 59643408,
+      "sha256": "95da321dcfa054fe355e1d820e50163b3ee4da1410a9a2aa72213d7626b2d3b9",
       "enabled": true,
       "source_repo": "saawant12/orbit-store-ps5",
       "asset_name": "orbit_store.elf",
@@ -47,14 +47,14 @@
     {
       "name": "PS5 WebKit Autoloader",
       "description": "PS5 WebKit Autoloader installer ELF payload.",
-      "version": "v0.8.0-pre-0850478",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
-      "filename": "webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
+      "version": "v0.8.0",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-installer_v0.8.0.elf",
+      "filename": "webkit-autoloader-installer_v0.8.0.elf",
       "size": 1885440,
-      "sha256": "d5929a1a8aa31ba7c6fd86eb501650b3be11d9f370adaada3d1abd236473356e",
+      "sha256": "015959f76c48e45df2b331ee2a6b52096afa3c2f9f1cbf9a29e67be699a6455b",
       "enabled": true,
       "source_repo": "itsPLK/ps5-webkit-autoloader",
-      "asset_name": "webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
+      "asset_name": "webkit-autoloader-installer_v0.8.0.elf",
       "elf_only": true,
       "firmware_compatibility": "Unverified for PS5 firmware 13.60; retained from earlier catalog requests."
     },
