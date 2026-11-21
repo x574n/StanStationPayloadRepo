@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "payloads": [
     {
       "name": "HyperHEN",
@@ -47,14 +47,14 @@
     {
       "name": "PS5 WebKit Autoloader",
       "description": "PS5 WebKit Autoloader installer ELF payload.",
-      "version": "v0.8.2",
-      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.2/webkit-autoloader-installer_v0.8.2.elf",
-      "filename": "webkit-autoloader-installer_v0.8.2.elf",
+      "version": "v0.8.3",
+      "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-installer_v0.8.3.elf",
+      "filename": "webkit-autoloader-installer_v0.8.3.elf",
       "size": 1885440,
-      "sha256": "1c415bc124944c85b86a4751006b98010b977f142142d67306d13804899bad54",
+      "sha256": "f4b0dee9af572ea1cb77aaf1e6fc5bf8ef520fc0a0a30753dd94a5cbdc04dd8e",
       "enabled": true,
       "source_repo": "itsPLK/ps5-webkit-autoloader",
-      "asset_name": "webkit-autoloader-installer_v0.8.2.elf",
+      "asset_name": "webkit-autoloader-installer_v0.8.3.elf",
       "elf_only": true,
       "firmware_compatibility": "Unverified for PS5 firmware 13.60; retained from earlier catalog requests."
     },
