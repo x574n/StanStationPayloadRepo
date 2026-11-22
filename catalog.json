@@ -1,6 +1,6 @@
 {
   "catalog_version": 1,
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "payloads": [
     {
       "name": "HyperHEN",
@@ -33,11 +33,11 @@
     {
       "name": "Orbit Store",
       "description": "Orbit Store PS5 release ELF payload.",
-      "version": "v1.9.5",
-      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.9.5/orbit_store.elf",
+      "version": "v1.9.6",
+      "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.9.6/orbit_store.elf",
       "filename": "orbit_store.elf",
-      "size": 59643408,
-      "sha256": "95da321dcfa054fe355e1d820e50163b3ee4da1410a9a2aa72213d7626b2d3b9",
+      "size": 59644208,
+      "sha256": "8a73e1265984589b7b8835f8b3c5c786c5edf753964dfc614687cdf57f0c7146",
       "enabled": true,
       "source_repo": "saawant12/orbit-store-ps5",
       "asset_name": "orbit_store.elf",
